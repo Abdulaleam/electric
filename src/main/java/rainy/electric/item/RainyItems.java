@@ -12,7 +12,7 @@ public class RainyItems {
 
     public static final Item  EMPTY_BATTERY = registerItem("empty_battery", new Item(new Item.Settings()));
 
-    public static final Item CHARGED_BATTERY = registerItem("charged_battery", new Item(new Item.Settings()));
+    public static final Item CHARGED_BATTERY = registerItem("charged_battery", new ChargedHitEffect(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
 
