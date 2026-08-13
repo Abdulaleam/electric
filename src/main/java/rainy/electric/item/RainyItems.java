@@ -9,6 +9,9 @@ import net.minecraft.util.Identifier;
 import rainy.electric.Electric;
 
 public class RainyItems {
+    public static final Item ZINC_DUST = registerItem("zinc_dust", new Item(new Item.Settings()));
+
+    public static final Item ZINC_PILE = registerItem("zinc_pile", new Item(new Item.Settings()));
 
     public static final Item  EMPTY_BATTERY = registerItem("empty_battery", new Item(new Item.Settings()));
 
@@ -33,6 +36,8 @@ public class RainyItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries ->{
             entries.add(EMPTY_BATTERY);
             entries.add(CHARGED_BATTERY);
+            entries.add(ZINC_DUST);
+            entries.add(ZINC_PILE);
 
 
 

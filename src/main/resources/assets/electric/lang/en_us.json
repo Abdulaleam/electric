@@ -2,7 +2,10 @@
 
   "item.electric.empty_battery": " §4Empty Battery",
 
-  "item.electric.charged_battery": " §aCharged Battery"
+  "item.electric.charged_battery": " §aCharged Battery",
+
+  "item.electric.zinc_dust" : " Zinc Dust",
+  "item.electric.zinc_pile" : " A Pile of Zinc"
 
 
 }
