@@ -5,7 +5,8 @@
   "item.electric.charged_battery": " §aCharged Battery",
 
   "item.electric.zinc_dust" : " Zinc Dust",
-  "item.electric.zinc_pile" : " A Pile of Zinc"
+  "item.electric.zinc_pile" : " A Pile of Zinc",
+  "block.electric.zinc_ore" : " Zinc Ore"
 
 
 }

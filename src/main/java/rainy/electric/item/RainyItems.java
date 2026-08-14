@@ -8,6 +8,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import rainy.electric.Electric;
 
+import static rainy.electric.block.RainyBlocks.ZINC_ORE;
+
 public class RainyItems {
     public static final Item ZINC_DUST = registerItem("zinc_dust", new Item(new Item.Settings()));
 
@@ -38,6 +40,7 @@ public class RainyItems {
             entries.add(CHARGED_BATTERY);
             entries.add(ZINC_DUST);
             entries.add(ZINC_PILE);
+            entries.add(ZINC_ORE);
 
 
 
