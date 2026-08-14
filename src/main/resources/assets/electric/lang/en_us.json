@@ -9,7 +9,9 @@
 
   "block.electric.zinc_ore" : " Zinc Ore",
   "item.electric.copper_coil": " Copper Coil",
-  "item.electric.copper_wire": " Copper Wire "
+  "item.electric.copper_wire": " Copper Wire ",
+
+  "itemgroup.electric.electric_era_items": " §7Electric Era"
 
 
 }
