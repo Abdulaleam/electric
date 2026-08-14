@@ -6,7 +6,10 @@
 
   "item.electric.zinc_dust" : " Zinc Dust",
   "item.electric.zinc_pile" : " A Pile of Zinc",
-  "block.electric.zinc_ore" : " Zinc Ore"
+
+  "block.electric.zinc_ore" : " Zinc Ore",
+  "item.electric.copper_coil": " Copper Coil",
+  "item.electric.copper_wire": " Copper Wire "
 
 
 }

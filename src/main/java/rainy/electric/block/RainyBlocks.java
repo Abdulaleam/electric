@@ -13,7 +13,7 @@ import rainy.electric.Electric;
 public class RainyBlocks {
 
     public static final Block ZINC_ORE = registerBlock("zinc_ore", new Block(AbstractBlock.Settings.create().strength(4f)
-            .sounds(BlockSoundGroup.DEEPSLATE_BRICKS)));
+            .sounds(BlockSoundGroup.NETHER_BRICKS)));
 
 
     private static Block registerBlock(String name, Block block) {

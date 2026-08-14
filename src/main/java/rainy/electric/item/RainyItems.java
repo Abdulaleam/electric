@@ -19,6 +19,10 @@ public class RainyItems {
 
     public static final Item CHARGED_BATTERY = registerItem("charged_battery", new ChargedHitEffect(new Item.Settings()));
 
+    public static final Item COPPER_COIL = registerItem("copper_coil", new Item(new Item.Settings()));
+
+    public static final Item COPPER_WIRE = registerItem("copper_wire", new Item(new Item.Settings()));
+
     private static Item registerItem(String name, Item item) {
 
         return Registry.register(Registries.ITEM, Identifier.of(Electric.MOD_ID, name), item);
@@ -41,6 +45,8 @@ public class RainyItems {
             entries.add(ZINC_DUST);
             entries.add(ZINC_PILE);
             entries.add(ZINC_ORE);
+            entries.add(COPPER_COIL);
+            entries.add(COPPER_WIRE);
 
 
 
