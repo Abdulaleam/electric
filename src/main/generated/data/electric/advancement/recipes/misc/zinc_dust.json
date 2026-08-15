@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "electric:zinc_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zinc_pile": {
+      "conditions": {
+        "items": [
+          {
+            "items": "electric:zinc_pile"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zinc_pile"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "electric:zinc_dust"
+    ]
+  }
+}

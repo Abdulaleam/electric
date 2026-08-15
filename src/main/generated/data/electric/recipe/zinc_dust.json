@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "Z": {
+      "item": "electric:zinc_pile"
+    }
+  },
+  "pattern": [
+    "ZZ",
+    "ZZ"
+  ],
+  "result": {
+    "count": 1,
+    "id": "electric:zinc_dust"
+  }
+}

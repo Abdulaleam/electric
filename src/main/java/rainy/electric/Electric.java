@@ -7,6 +7,7 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import rainy.electric.block.RainyBlocks;
+import rainy.electric.entity.ModBlockEntities;
 import rainy.electric.item.RainyItemGroups;
 import rainy.electric.item.RainyItems;
 
@@ -22,6 +23,7 @@ public class Electric implements ModInitializer {
 		RainyItems.registerRainyItems();
        RainyBlocks.registerRainyBlocks();
 		RainyItemGroups.registerRainyItemGroups();
+		ModBlockEntities.registerBlockEntities();
 
 
 

@@ -10,6 +10,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import rainy.electric.Electric;
+import rainy.electric.block.RainyBlocks;
 
 public class RainyItemGroups {
 
@@ -25,6 +26,9 @@ public class RainyItemGroups {
                         entries.add(RainyItems.ZINC_PILE);
                         entries.add(RainyItems.COPPER_COIL);
                         entries.add(RainyItems.COPPER_WIRE);
+                        entries.add(RainyItems.ZINC_INGOT);
+                        entries.add(RainyBlocks.ZINC_ORE);
+                        entries.add(RainyBlocks.INSULATOR);
                     })
 
                     .build()
