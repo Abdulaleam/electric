@@ -1,13 +1,14 @@
 {
 
   "item.electric.empty_battery": " §4Empty Battery",
-
   "item.electric.charged_battery": " §aCharged Battery",
 
   "item.electric.zinc_dust" : " Zinc Dust",
   "item.electric.zinc_pile" : " A Pile of Zinc",
-
+  "item.electric.zinc_ingot" : " Zinc Ingot",
   "block.electric.zinc_ore" : " Zinc Ore",
+
+
   "item.electric.copper_coil": " Copper Coil",
   "item.electric.copper_wire": " Copper Wire ",
 

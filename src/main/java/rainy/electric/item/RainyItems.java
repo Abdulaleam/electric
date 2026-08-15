@@ -15,6 +15,8 @@ public class RainyItems {
 
     public static final Item ZINC_PILE = registerItem("zinc_pile", new Item(new Item.Settings()));
 
+    public static final Item ZINC_INGOT = registerItem("zinc_ingot", new Item(new Item.Settings()));
+
     public static final Item  EMPTY_BATTERY = registerItem("empty_battery", new Item(new Item.Settings()));
 
     public static final Item CHARGED_BATTERY = registerItem("charged_battery", new ChargedHitEffect(new Item.Settings()));
@@ -22,6 +24,7 @@ public class RainyItems {
     public static final Item COPPER_COIL = registerItem("copper_coil", new Item(new Item.Settings()));
 
     public static final Item COPPER_WIRE = registerItem("copper_wire", new Item(new Item.Settings()));
+
 
     private static Item registerItem(String name, Item item) {
 
