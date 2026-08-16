@@ -8,9 +8,9 @@ import rainy.electric.Electric;
 import rainy.electric.block.RainyBlocks;
 
 public class ModBlockEntities {
-    public static final BlockEntityType<InsulatorBlockEntity> INSULATOR_BE=
+    public static final BlockEntityType<DisplayerBlockEntity> INSULATOR_BE=
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Electric.MOD_ID, "insulat0r_be"),
-                    BlockEntityType.Builder.create(InsulatorBlockEntity::new, RainyBlocks.INSULATOR).build(null));
+                    BlockEntityType.Builder.create(DisplayerBlockEntity::new, RainyBlocks.DISPLAYER).build(null));
 
 
     public static void registerBlockEntities() {

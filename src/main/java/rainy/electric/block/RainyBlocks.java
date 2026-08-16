@@ -14,8 +14,8 @@ public class RainyBlocks {
 
     public static final Block ZINC_ORE = registerBlock("zinc_ore", new Block(AbstractBlock.Settings.create().strength(4f)
             .sounds(BlockSoundGroup.NETHER_BRICKS)));
-    public static final Block INSULATOR = registerBlock("insulator",
-            new InsulatorBlock(AbstractBlock.Settings.create().nonOpaque()));
+    public static final Block DISPLAYER = registerBlock("displayer",
+            new DisplayerBlock(AbstractBlock.Settings.create().nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block) {

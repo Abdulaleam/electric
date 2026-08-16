@@ -14,15 +14,15 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RotationAxis;
 import net.minecraft.world.LightType;
 import net.minecraft.world.World;
-import rainy.electric.entity.InsulatorBlockEntity;
+import rainy.electric.entity.DisplayerBlockEntity;
 
-public class InsulatorBlockEntityRender implements BlockEntityRenderer<InsulatorBlockEntity> {
+public class InsulatorBlockEntityRender implements BlockEntityRenderer<DisplayerBlockEntity> {
     public InsulatorBlockEntityRender(BlockEntityRendererFactory.Context context) {
 
     }
 
     @Override
-    public void render(InsulatorBlockEntity entity, float tickDelta, MatrixStack matrices,
+    public void render(DisplayerBlockEntity entity, float tickDelta, MatrixStack matrices,
                        VertexConsumerProvider vertexConsumers, int light, int overlay) {
         ItemRenderer itemRenderer = MinecraftClient.getInstance().getItemRenderer();
         ItemStack stack = entity.getStack(0);

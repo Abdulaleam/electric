@@ -11,7 +11,7 @@
 
   "item.electric.copper_coil": " Copper Coil",
   "item.electric.copper_wire": " Copper Wire ",
-  "block.electric.insulator": " Test Learn Block Entity (FAILED INSULATOR)",
+  "block.electric.displayer": " Nuclear Displayer ",
 
   "itemgroup.electric.electric_era_items": " §5Electric Era"
 

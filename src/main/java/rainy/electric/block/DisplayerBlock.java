@@ -16,13 +16,15 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import rainy.electric.entity.InsulatorBlockEntity;
+import rainy.electric.entity.DisplayerBlockEntity;
 
-public class InsulatorBlock extends BlockWithEntity {
+public class DisplayerBlock extends BlockWithEntity {
 
-     public static final MapCodec<InsulatorBlock> CODEC = InsulatorBlock.createCodec(InsulatorBlock::new);
 
-    public InsulatorBlock(Settings settings) {
+
+     public static final MapCodec<DisplayerBlock> CODEC = DisplayerBlock.createCodec(DisplayerBlock::new);
+
+    public DisplayerBlock(Settings settings) {
         super(settings);
     }
 
@@ -34,7 +36,7 @@ public class InsulatorBlock extends BlockWithEntity {
 
     @Override
     public @Nullable BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new InsulatorBlockEntity(pos, state);
+        return new DisplayerBlockEntity(pos, state);
     }
 
     @Override
@@ -47,8 +49,8 @@ public class InsulatorBlock extends BlockWithEntity {
     protected void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
         if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if(blockEntity instanceof InsulatorBlockEntity) {
-                ItemScatterer.spawn(world, pos, ((InsulatorBlockEntity) blockEntity));
+            if(blockEntity instanceof DisplayerBlockEntity) {
+                ItemScatterer.spawn(world, pos, ((DisplayerBlockEntity) blockEntity));
                 world.updateComparators(pos, this);
             }
         }
@@ -58,35 +60,29 @@ public class InsulatorBlock extends BlockWithEntity {
     @Override
     protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos,
                                              PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if (world.getBlockEntity(pos) instanceof InsulatorBlockEntity insulator) {
-            if (world.isClient) {
-                return ItemActionResult.SUCCESS;
-            }
-
-            if (insulator.isEmpty() && !stack.isEmpty()) {
-                ItemStack toStore = stack.copy();
-                toStore.setCount(1);
-                insulator.setStack(0, toStore);
-
+        if(world.getBlockEntity(pos) instanceof DisplayerBlockEntity displayerBlockEntity) {
+            if(displayerBlockEntity.isEmpty() && !stack.isEmpty()) {
+                displayerBlockEntity.setStack(0, stack.copyWithCount(1));
+                world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 2f);
                 stack.decrement(1);
 
-                world.playSound(null, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1.0F, 1.0F);
-                insulator.markDirty();
-                world.updateListeners(pos, state, state, 3);
-            } else if (stack.isEmpty() && !player.isSneaking()) {
-                ItemStack stackOnInsulator = insulator.getStack(0).copy();
-                if (!stackOnInsulator.isEmpty()) {
-                    player.setStackInHand(hand, stackOnInsulator);
-                    insulator.clear();
+                displayerBlockEntity.markDirty();
+                world.updateListeners(pos, state, state, 0);
+            } else if(stack.isEmpty() && !player.isSneaking()) {
+                ItemStack stackOnPedestal = displayerBlockEntity.getStack(0);
+                player.setStackInHand(Hand.MAIN_HAND, stackOnPedestal);
+                world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 1f);
+                displayerBlockEntity.clear();
 
-                    world.playSound(null, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1.0F, 1.0F);
-                    insulator.markDirty();
-                    world.updateListeners(pos, state, state, 3);
-
+                displayerBlockEntity.markDirty();
+                world.updateListeners(pos, state, state, 0);
+            } else if(player.isSneaking()) {
+                player.openHandledScreen(displayerBlockEntity);
             }
-        }}
+        }
 
     return ItemActionResult.SUCCESS;
 
     }}
+
 

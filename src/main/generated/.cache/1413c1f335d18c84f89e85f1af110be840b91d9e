@@ -1,9 +1,9 @@
-// 1.21.1	2026-08-15T03:25:00.3032189	electric/Model Definitions
+// 1.21.1	2026-08-16T10:52:33.8164203	electric/Model Definitions
 0624857eed9dccf8b6f695026d89b3d7586e9f2e assets\electric\models\item\zinc_dust.json
 907ec6aefc461fcf83473f3607ee1dde7c3e9b96 assets\electric\blockstates\zinc_ore.json
-1f0fe3efdc1b55ca25bf285d4b978e80b0deffd9 assets\electric\models\item\zinc_ore.json
 60409e69fd76f55b31359946cdb40032749d1692 assets\electric\models\item\empty_battery.json
 0957247a17f7089633087049c58015cbbf880073 assets\electric\models\item\charged_battery.json
+1f0fe3efdc1b55ca25bf285d4b978e80b0deffd9 assets\electric\models\item\zinc_ore.json
 82d026fa4a364bc3d080f5a34f6356468c56e36a assets\electric\models\item\zinc_pile.json
 3196820eb613c247c6fb18fbf6e15da975a22ab3 assets\electric\models\item\copper_wire.json
 193e0b379aee53a0947c3a63bc7ff6fe7d3569a5 assets\electric\models\item\copper_coil.json

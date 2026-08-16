@@ -1,8 +1,10 @@
 package rainy.electric.entity;
 
+import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
@@ -10,16 +12,21 @@ import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.screen.ScreenHandler;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import org.jetbrains.annotations.Nullable;
+import rainy.electric.screen.DisplayerScreenHandler;
 
-public class InsulatorBlockEntity extends BlockEntity implements ImplementedInventory {
+public class DisplayerBlockEntity extends BlockEntity implements ImplementedInventory, ExtendedScreenHandlerFactory<BlockPos>{
+
     private float rotation = 0;
 
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(1, ItemStack.EMPTY);
 
-    public InsulatorBlockEntity(BlockPos pos, BlockState state) {
+    public DisplayerBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.INSULATOR_BE, pos, state);
     }
 
@@ -48,6 +55,23 @@ public class InsulatorBlockEntity extends BlockEntity implements ImplementedInve
         Inventories.writeNbt(nbt, inventory, registryLookup);
     }
 
+
+    @Override
+    public BlockPos getScreenOpeningData(ServerPlayerEntity player) {
+        return this.pos;
+    }
+
+    @Override
+    public Text getDisplayName() {
+        return  Text.literal(" Nuclear Displayer ");
+    }
+
+    @Override
+    public @Nullable ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
+        return new DisplayerScreenHandler(syncId, playerInventory, this.pos);
+    }
+
+
     @Override
     public @Nullable Packet<ClientPlayPacketListener> toUpdatePacket() {
         return BlockEntityUpdateS2CPacket.create(this);
@@ -57,4 +81,5 @@ public class InsulatorBlockEntity extends BlockEntity implements ImplementedInve
     public NbtCompound toInitialChunkDataNbt(RegistryWrapper.WrapperLookup registryLookup) {
         return createNbt(registryLookup);
     }
+
 }

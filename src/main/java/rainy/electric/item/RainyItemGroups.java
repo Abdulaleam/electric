@@ -1,8 +1,6 @@
 package rainy.electric.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.fabricmc.fabric.impl.itemgroup.FabricItemGroupBuilderImpl;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -28,7 +26,7 @@ public class RainyItemGroups {
                         entries.add(RainyItems.COPPER_WIRE);
                         entries.add(RainyItems.ZINC_INGOT);
                         entries.add(RainyBlocks.ZINC_ORE);
-                        entries.add(RainyBlocks.INSULATOR);
+                        entries.add(RainyBlocks.DISPLAYER);
                     })
 
                     .build()
