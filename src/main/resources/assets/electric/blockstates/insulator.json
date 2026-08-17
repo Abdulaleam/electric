@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "electric:block/insulator",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "electric:block/insulator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "electric:block/insulator",
+      "y": 270
+    },
+    "facing=west": {
+      "model": "electric:block/insulator"
+    }
+  }
+}

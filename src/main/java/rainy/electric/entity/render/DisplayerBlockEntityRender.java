@@ -16,8 +16,8 @@ import net.minecraft.world.LightType;
 import net.minecraft.world.World;
 import rainy.electric.entity.DisplayerBlockEntity;
 
-public class InsulatorBlockEntityRender implements BlockEntityRenderer<DisplayerBlockEntity> {
-    public InsulatorBlockEntityRender(BlockEntityRendererFactory.Context context) {
+public class DisplayerBlockEntityRender implements BlockEntityRenderer<DisplayerBlockEntity> {
+    public DisplayerBlockEntityRender(BlockEntityRendererFactory.Context context) {
 
     }
 

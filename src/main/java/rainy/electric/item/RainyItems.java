@@ -8,7 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import rainy.electric.Electric;
 
-import static rainy.electric.block.RainyBlocks.ZINC_ORE;
+import static rainy.electric.block.RainyBlocks.*;
 
 public class RainyItems {
     public static final Item ZINC_DUST = registerItem("zinc_dust", new Item(new Item.Settings()));
@@ -24,6 +24,8 @@ public class RainyItems {
     public static final Item COPPER_COIL = registerItem("copper_coil", new Item(new Item.Settings()));
 
     public static final Item COPPER_WIRE = registerItem("copper_wire", new Item(new Item.Settings()));
+
+    public static final Item COPPER_INSULATED_WIRE = registerItem("copper_insulated_wire", new Item(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
@@ -50,6 +52,8 @@ public class RainyItems {
             entries.add(ZINC_ORE);
             entries.add(COPPER_COIL);
             entries.add(COPPER_WIRE);
+            entries.add(DISPLAYER);
+            entries.add(INSULATOR);
 
 
 

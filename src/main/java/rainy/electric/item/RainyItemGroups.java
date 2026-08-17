@@ -27,6 +27,8 @@ public class RainyItemGroups {
                         entries.add(RainyItems.ZINC_INGOT);
                         entries.add(RainyBlocks.ZINC_ORE);
                         entries.add(RainyBlocks.DISPLAYER);
+                        entries.add(RainyBlocks.INSULATOR);
+                        entries.add(RainyItems.COPPER_INSULATED_WIRE);
                     })
 
                     .build()
