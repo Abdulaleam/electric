@@ -1,5 +1,11 @@
-// 1.21.1	2026-08-17T06:31:00.3821788	electric/Recipes
+// 1.21.1	2026-08-18T10:40:05.8981623	electric/Recipes
+0167bab71346a3e782ee1d3da3a95fbc6701505d data\electric\advancement\recipes\misc\gold_wire.json
+b823a7a443c19c1ea09e79aa2f33654ff9afd7ef data\electric\advancement\recipes\misc\insulator.json
+1475dd7fc6cbc0c5c5a25cde35244ea10a1ae619 data\electric\advancement\recipes\misc\zinc_wire.json
 4d51af44a5a0945ced522af627e45c5e8685ef4e data\electric\recipe\copper_wire.json
 d166debc9e7f728c97b4f7af87afe653656de4e3 data\electric\recipe\zinc_dust.json
+f03559f4ddbc0f574d39715f05ce6f86adb71f44 data\electric\recipe\gold_wire.json
+e987f113e67fc92ce4a46f7ff5f330ae613f2830 data\electric\recipe\insulator.json
+e9f63d26ada785edda9eada24fe76ec7cf501826 data\electric\recipe\zinc_wire.json
 ac31a7ba80b03db20537c3751e29c744e1bbae20 data\electric\advancement\recipes\misc\zinc_dust.json
 4d1cce2ac9b830b1bef85b58f0249e2affd438fb data\electric\advancement\recipes\misc\copper_wire.json

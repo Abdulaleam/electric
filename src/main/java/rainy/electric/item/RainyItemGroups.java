@@ -29,6 +29,12 @@ public class RainyItemGroups {
                         entries.add(RainyBlocks.DISPLAYER);
                         entries.add(RainyBlocks.INSULATOR);
                         entries.add(RainyItems.COPPER_INSULATED_WIRE);
+                        entries.add(RainyItems.ZINC_WIRE);
+                        entries.add(RainyItems.INSULATED_ZINC_WIRE);
+                        entries.add(RainyItems.ZINC_COIL);
+                        entries.add(RainyItems.GOLD_WIRE);
+                        entries.add(RainyItems.INSULATED_GOLD_WIRE);
+                        entries.add(RainyItems.GOLD_COIL);
                     })
 
                     .build()

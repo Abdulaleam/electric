@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:redstone"
+    },
+    "X": {
+      "item": "electric:charged_battery"
+    },
+    "Y": {
+      "item": "minecraft:iron_ingot"
+    },
+    "Z": {
+      "item": "electric:gold_wire"
+    }
+  },
+  "pattern": [
+    "YYY",
+    "NXN",
+    "ZZZ"
+  ],
+  "result": {
+    "count": 1,
+    "id": "electric:insulator"
+  }
+}

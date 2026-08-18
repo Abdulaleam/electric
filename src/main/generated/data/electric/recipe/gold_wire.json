@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "Z": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "ZZZ"
+  ],
+  "result": {
+    "count": 1,
+    "id": "electric:gold_wire"
+  }
+}

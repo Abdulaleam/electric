@@ -14,6 +14,12 @@
   "block.electric.displayer": " Nuclear Displayer ",
   "block.electric.insulator": " The Allmighty Insulator",
   "item.electric.copper_insulated_wire": " Insulated Copper Wire",
+  "item.electric.zinc_wire": " Zinc Wire ",
+  "item.electric.insulated_zinc_wire": " Insulated Zinc Wire",
+  "item.electric.zinc_coil": " Zinc Coil",
+  "item.electric.gold_wire": " Gold Wire",
+  "item.electric.insulated_gold_wire": " Insulated Gold Wire",
+  "item.electric.gold_coil": "  Gold coil",
 
   "itemgroup.electric.electric_era_items": " §5Electric Era"
 

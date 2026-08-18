@@ -8,6 +8,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import rainy.electric.block.RainyBlocks;
 import rainy.electric.item.RainyItems;
 
 import java.util.List;
@@ -33,6 +34,32 @@ public class RainyRecipeProvider extends FabricRecipeProvider {
                 .input('Z', Items.COPPER_INGOT)
                 .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
                 .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.ZINC_WIRE)
+                .pattern("ZZZ")
+                .input('Z', RainyItems.ZINC_INGOT)
+                .criterion(hasItem(RainyItems.ZINC_INGOT), conditionsFromItem(RainyItems.ZINC_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.GOLD_WIRE)
+                .pattern("ZZZ")
+                .input('Z', Items.GOLD_INGOT)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyBlocks.INSULATOR)
+                .pattern("YYY")
+                .pattern("NXN")
+                .pattern("ZZZ")
+                .input('X', RainyItems.CHARGED_BATTERY)
+                .input('Z', RainyItems.GOLD_WIRE)
+                .input('N', Items.REDSTONE)
+                .input('Y', Items.IRON_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter);
+
+
+
 
 
 

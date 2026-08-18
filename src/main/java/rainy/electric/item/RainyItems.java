@@ -27,6 +27,13 @@ public class RainyItems {
 
     public static final Item COPPER_INSULATED_WIRE = registerItem("copper_insulated_wire", new Item(new Item.Settings()));
 
+    public static final Item ZINC_WIRE = registerItem("zinc_wire", new Item(new Item.Settings()));
+    public static final Item INSULATED_ZINC_WIRE = registerItem("insulated_zinc_wire", new Item(new Item.Settings()));
+    public static final Item GOLD_WIRE = registerItem("gold_wire", new Item(new Item.Settings()));
+    public static final Item INSULATED_GOLD_WIRE = registerItem("insulated_gold_wire", new Item(new Item.Settings()));
+    public static final Item ZINC_COIL = registerItem("zinc_coil", new Item(new Item.Settings()));
+    public static final Item GOLD_COIL = registerItem("gold_coil", new Item(new Item.Settings()));
+
 
     private static Item registerItem(String name, Item item) {
 

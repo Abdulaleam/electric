@@ -12,7 +12,7 @@ import net.minecraft.util.math.Direction;
 import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
-// HEY REVIEWER , THIS IS NOT MINE , AND ITS NOT AI OR FRUAD , THIS IS SMTH LIKE A TEMPLATE I AND ALOT OF MODDERS USE AS TEMPALTE
+// HEY REVIEWER , THIS IS NOT MINE , AND ITS NOT AI  , THIS IS   A TEMPLATE  I AND ALOT OF MODDERS USE AS TEMPALTE
 
 /**
  * A simple {@code SidedInventory} implementation with only default methods + an item list getter.
