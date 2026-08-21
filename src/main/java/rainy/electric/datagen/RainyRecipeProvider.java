@@ -58,6 +58,17 @@ public class RainyRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.EMPTY_BATTERY)
+                .pattern("YYY")
+                .pattern("XZX")
+                .pattern("NNN")
+                .input('X', Items.REDSTONE_BLOCK)
+                .input('Z', RainyItems.COPPER_WIRE)
+                .input('N', Items.GOLD_INGOT)
+                .input('Y', Items.STONE_BRICKS)
+                .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
+                .offerTo(exporter);
+
 
 
 

@@ -1,0 +1,10 @@
+{
+  "type": "electric:insulator",
+  "ingredient": {
+    "item": "electric:gold_wire"
+  },
+  "result": {
+    "id": "electric:insulated_gold_wire"
+  }
+
+}

@@ -1,0 +1,9 @@
+{
+  "type": "electric:insulator",
+  "ingredient": {
+    "item": "electric:copper_wire"
+  },
+  "result": {
+    "id": "electric:copper_insulated_wire"
+  }
+}

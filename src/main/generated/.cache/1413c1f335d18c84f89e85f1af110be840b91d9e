@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-18T10:40:05.8996198	electric/Model Definitions
+// 1.21.1	2026-08-18T10:51:08.2504717	electric/Model Definitions
 60409e69fd76f55b31359946cdb40032749d1692 assets\electric\models\item\empty_battery.json
 3be5f0a1e2c433c57c4e5d3a064fa32ad1106a38 assets\electric\models\item\zinc_coil.json
 18d84ffe6b6efcf1e9fd2f5baf87ab8dd4ce8816 assets\electric\models\item\insulated_gold_wire.json
@@ -9,8 +9,8 @@ aed6d772295a1b1c26d489a4950297fe1164794d assets\electric\models\item\gold_wire.j
 a221b129f3a04f7e808266620f60f58d51fdaf71 assets\electric\models\block\zinc_ore.json
 0624857eed9dccf8b6f695026d89b3d7586e9f2e assets\electric\models\item\zinc_dust.json
 907ec6aefc461fcf83473f3607ee1dde7c3e9b96 assets\electric\blockstates\zinc_ore.json
-0957247a17f7089633087049c58015cbbf880073 assets\electric\models\item\charged_battery.json
 1f0fe3efdc1b55ca25bf285d4b978e80b0deffd9 assets\electric\models\item\zinc_ore.json
+0957247a17f7089633087049c58015cbbf880073 assets\electric\models\item\charged_battery.json
 c8e18712c37df3f04166f02ad3827aac3fe05baa assets\electric\models\item\insulated_zinc_wire.json
 82d026fa4a364bc3d080f5a34f6356468c56e36a assets\electric\models\item\zinc_pile.json
 9c72a43e7bea198c2428c954b5f4e290a247e2a8 assets\electric\models\item\zinc_wire.json

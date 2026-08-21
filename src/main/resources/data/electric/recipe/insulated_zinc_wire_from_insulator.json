@@ -1,0 +1,10 @@
+{
+  "type": "electric:insulator",
+  "ingredient" : {
+    "item": "electric:zinc_wire"
+  },
+  "result": {
+    "id": "electric:insulated_zinc_wire"
+  }
+
+}

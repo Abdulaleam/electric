@@ -10,6 +10,7 @@ import rainy.electric.block.RainyBlocks;
 import rainy.electric.entity.ModBlockEntities;
 import rainy.electric.item.RainyItemGroups;
 import rainy.electric.item.RainyItems;
+import rainy.electric.recipe.ModRecipes;
 import rainy.electric.screen.ModScreenHandlers;
 
 public class Electric implements ModInitializer {
@@ -26,6 +27,7 @@ public class Electric implements ModInitializer {
 		RainyItemGroups.registerRainyItemGroups();
 		ModBlockEntities.registerBlockEntities();
 		ModScreenHandlers.registerscreenHandlers();
+		ModRecipes.registerRecipe();
 
 
 

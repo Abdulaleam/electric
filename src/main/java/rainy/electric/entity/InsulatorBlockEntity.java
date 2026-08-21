@@ -12,6 +12,7 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
@@ -22,7 +23,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import rainy.electric.item.RainyItems;
+import rainy.electric.recipe.InsulatorRecipe;
+import rainy.electric.recipe.InsulatorRecipeInput;
+import rainy.electric.recipe.ModRecipes;
 import rainy.electric.screen.InsulatorScreenHandler;
+
+import java.util.Optional;
 
 public class InsulatorBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
 
@@ -119,8 +125,9 @@ public class InsulatorBlockEntity extends BlockEntity implements ExtendedScreenH
     }
 
     private void craftItem() {
+        Optional<RecipeEntry<InsulatorRecipe>> recipe = getCurrentRecipe();
 
-        ItemStack output = new ItemStack(RainyItems.COPPER_INSULATED_WIRE, 1);
+        ItemStack output = recipe.get().value().output();
 
         this.removeStack(INPUT_SLOT, 1);
         this.setStack(OUTPUT_SLOT, new ItemStack(output.getItem(),
@@ -133,21 +140,29 @@ public class InsulatorBlockEntity extends BlockEntity implements ExtendedScreenH
     }
 
     private boolean hasRecipe() {
-        Item  input = RainyItems.COPPER_WIRE;
-        ItemStack output = new ItemStack(RainyItems.COPPER_INSULATED_WIRE);
+        Optional<RecipeEntry<InsulatorRecipe>> recipe = getCurrentRecipe();
+        if(recipe.isEmpty()) {
+            return false;
+        }
 
-        return this.getStack(INPUT_SLOT).isOf(input) && canInsertAmountIntoOutputSlot(output.getCount()) &&
-                CanInsertItemIntoOutputSlot(output);
+        ItemStack output = recipe.get().value().output();
+        return canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
     }
 
-    private boolean CanInsertItemIntoOutputSlot(ItemStack output) {
+    private Optional<RecipeEntry<InsulatorRecipe>> getCurrentRecipe() {
+        return this.getWorld().getRecipeManager()
+                .getFirstMatch(ModRecipes.INSULATOR_TYPE, new InsulatorRecipeInput(inventory.get(INPUT_SLOT)), this.getWorld());
+    }
+
+    private boolean canInsertItemIntoOutputSlot(ItemStack output) {
         return this.getStack(OUTPUT_SLOT).isEmpty() || this.getStack(OUTPUT_SLOT).getItem() == output.getItem();
     }
 
     private boolean canInsertAmountIntoOutputSlot(int count) {
-        int maxCount = this.getStack(OUTPUT_SLOT).isEmpty() ? 64 : this.getStack(OUTPUT_SLOT).getCount();
+        int maxCount = this.getStack(OUTPUT_SLOT).isEmpty() ? 64 : this.getStack(OUTPUT_SLOT).getMaxCount();
         int currentCount = this.getStack(OUTPUT_SLOT).getCount();
-        return maxCount >= currentCount;
+
+        return maxCount >= currentCount + count;
     }
 
     @Override
