@@ -26,7 +26,7 @@ public class RainyLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(RainyBlocks.ZINC_ORE, multiOreDrops(RainyBlocks.ZINC_ORE, RainyItems.ZINC_PILE, 3, 7));
+        addDrop(RainyBlocks.ZINC_ORE, multiOreDrops(RainyBlocks.ZINC_ORE, RainyItems.MARROW_HEAP, 3, 7));
 
     }
 

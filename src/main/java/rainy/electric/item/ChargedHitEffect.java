@@ -7,7 +7,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
@@ -37,7 +36,7 @@ public class ChargedHitEffect extends Item {
         stack.decrement(1);
 
         if (attacker instanceof PlayerEntity player) {
-            ItemStack  empty = new ItemStack(RainyItems.EMPTY_BATTERY);
+            ItemStack  empty = new ItemStack(RainyItems.DORMANT_HEART);
             if(!player.getInventory().insertStack(empty)) {
                 player.dropItem(empty, false);
 
