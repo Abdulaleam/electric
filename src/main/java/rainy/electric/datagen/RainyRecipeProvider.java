@@ -20,11 +20,11 @@ public class RainyRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter exporter) {
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.MARROW_DUST)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.ZINC_DUST)
                 .pattern("ZZ")
                 .pattern("ZZ")
-                .input('Z', RainyItems.MARROW_HEAP)
-                .criterion(hasItem(RainyItems.MARROW_HEAP), conditionsFromItem(RainyItems.MARROW_HEAP))
+                .input('Z', RainyItems.ZINC_PILE)
+                .criterion(hasItem(RainyItems.ZINC_PILE), conditionsFromItem(RainyItems.ZINC_PILE))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.COPPER_WIRE)
@@ -35,8 +35,8 @@ public class RainyRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.ZINC_WIRE)
                 .pattern("ZZZ")
-                .input('Z', RainyItems.MARROW_INGOT)
-                .criterion(hasItem(RainyItems.MARROW_INGOT), conditionsFromItem(RainyItems.MARROW_INGOT))
+                .input('Z', RainyItems.ZINC_INGOT)
+                .criterion(hasItem(RainyItems.ZINC_INGOT), conditionsFromItem(RainyItems.ZINC_INGOT))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.GOLD_WIRE)
@@ -49,14 +49,14 @@ public class RainyRecipeProvider extends FabricRecipeProvider {
                 .pattern("YYY")
                 .pattern("NXN")
                 .pattern("ZZZ")
-                .input('X', RainyItems.BEATING_HEART)
+                .input('X', RainyItems.EMPTY_BATTERY)
                 .input('Z', RainyItems.GOLD_WIRE)
                 .input('N', Items.REDSTONE)
                 .input('Y', Items.IRON_INGOT)
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.DORMANT_HEART)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.CHARGED_BATTERY)
                 .pattern("YYY")
                 .pattern("XZX")
                 .pattern("NNN")

@@ -1,17 +1,15 @@
 {
 
-  "item.electric.dormant_heart": " §8Dormant Heart ",
-  "item.electric.charged_battery": " §4Beating Heart ",
-
-  "item.electric.marrow_dust" : " Human Marrow Dust ",
-  "item.electric.heap_marrow" : " Heap of Human Marrow",
-  "item.electric.marow_ingot" : " Bound Marrow Ingot ",
-  "block.electric.marrow_vein" : " Screaming Marrow Vein ",
-
+  "item.electric.empty_battery": " §4Empty Battery",
+  "item.electric.charged_battery": "§aCharged Battery",
+  "item.electric.zinc_dust" : " Zinc Dust",
+  "item.electric.zinc_pile" : " A Pile of Zinc",
+  "item.electric.zinc_ingot" : " Zinc Ingot",
+  "block.electric.zinc_ore" : " Zinc Ore",
 
   "item.electric.copper_coil": " Copper Coil",
   "item.electric.copper_wire": " Copper Wire ",
-  "block.electric.displayer": " The Sealing Ward ",
+  "block.electric.displayer": " Nuclear Displayer ",
   "block.electric.insulator": " The Allmighty Insulator",
   "item.electric.copper_insulated_wire": " Insulated Copper Wire",
   "item.electric.zinc_wire": " Zinc Wire ",
@@ -21,7 +19,7 @@
   "item.electric.insulated_gold_wire": " Insulated Gold Wire",
   "item.electric.gold_coil": "  Gold coil",
 
-  "itemgroup.electric.electric_era_items": " §4 The Forbidden Ritual"
+  "itemgroup.electric.electric_era_items": " §5Electric Era"
 
 
 }

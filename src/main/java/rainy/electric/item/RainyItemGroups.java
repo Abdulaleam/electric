@@ -14,16 +14,16 @@ public class RainyItemGroups {
 
     public static final ItemGroup ELECTRIC_ERA_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Electric.MOD_ID, "electric_era_items"),
-            FabricItemGroup.builder().icon(()-> new ItemStack(RainyItems.DORMANT_HEART))
+            FabricItemGroup.builder().icon(()-> new ItemStack(RainyItems.CHARGED_BATTERY))
                     .displayName(Text.translatable("itemgroup.electric.electric_era_items"))
                     .entries((displayContext, entries) -> {
 
-                        entries.add(RainyItems.DORMANT_HEART);
-                        entries.add(RainyItems.BEATING_HEART);
+                        entries.add(RainyItems.CHARGED_BATTERY);
+                        entries.add(RainyItems.EMPTY_BATTERY);
                         entries.add(RainyBlocks.ZINC_ORE);
-                        entries.add(RainyItems.MARROW_DUST);
-                        entries.add(RainyItems.MARROW_HEAP);
-                        entries.add(RainyItems.MARROW_INGOT);
+                        entries.add(RainyItems.ZINC_DUST);
+                        entries.add(RainyItems.ZINC_PILE);
+                        entries.add(RainyItems.ZINC_INGOT);
                         entries.add(RainyBlocks.DISPLAYER);
                         entries.add(RainyBlocks.INSULATOR);
                         entries.add(RainyItems.COPPER_WIRE);

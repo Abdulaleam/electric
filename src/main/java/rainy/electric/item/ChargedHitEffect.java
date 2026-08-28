@@ -36,7 +36,7 @@ public class ChargedHitEffect extends Item {
         stack.decrement(1);
 
         if (attacker instanceof PlayerEntity player) {
-            ItemStack  empty = new ItemStack(RainyItems.DORMANT_HEART);
+            ItemStack  empty = new ItemStack(RainyItems.CHARGED_BATTERY);
             if(!player.getInventory().insertStack(empty)) {
                 player.dropItem(empty, false);
 

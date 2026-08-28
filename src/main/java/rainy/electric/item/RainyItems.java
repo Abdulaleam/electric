@@ -11,15 +11,15 @@ import rainy.electric.Electric;
 import static rainy.electric.block.RainyBlocks.*;
 
 public class RainyItems {
-    public static final Item MARROW_DUST = registerItem("marrow_dust", new Item(new Item.Settings()));
+    public static final Item ZINC_DUST = registerItem("zinc_dust", new Item(new Item.Settings()));
 
-        public static final Item MARROW_HEAP = registerItem("heap_marrow", new Item(new Item.Settings()));
+        public static final Item ZINC_PILE = registerItem("zinc_pile", new Item(new Item.Settings()));
 
-    public static final Item MARROW_INGOT = registerItem("marrow_ingot", new Item(new Item.Settings()));
+    public static final Item ZINC_INGOT = registerItem("zinc_ingot", new Item(new Item.Settings()));
 
-    public static final Item DORMANT_HEART = registerItem("dormant_heart", new Item(new Item.Settings()));
+    public static final Item CHARGED_BATTERY = registerItem("charged_battery", new ChargedHitEffect(new Item.Settings()));
 
-    public static final Item BEATING_HEART = registerItem("beating_heart", new ChargedHitEffect(new Item.Settings()));
+    public static final Item EMPTY_BATTERY = registerItem("empty_battery", new ChargedHitEffect(new Item.Settings()));
 
     public static final Item COPPER_COIL = registerItem("copper_coil", new Item(new Item.Settings()));
 
@@ -52,10 +52,10 @@ public class RainyItems {
         Electric.LOGGER.info("Registering RainyItems");
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries ->{
-            entries.add(DORMANT_HEART);
-            entries.add(BEATING_HEART);
-            entries.add(MARROW_DUST);
-            entries.add(MARROW_HEAP);
+            entries.add(CHARGED_BATTERY);
+            entries.add(EMPTY_BATTERY);
+            entries.add(ZINC_DUST);
+            entries.add(ZINC_PILE);
             entries.add(ZINC_ORE);
             entries.add(COPPER_COIL);
             entries.add(COPPER_WIRE);

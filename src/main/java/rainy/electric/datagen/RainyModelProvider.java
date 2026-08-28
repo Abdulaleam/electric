@@ -21,13 +21,13 @@ public class RainyModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(RainyItems.BEATING_HEART, Models.GENERATED);
-        itemModelGenerator.register(RainyItems.DORMANT_HEART, Models.GENERATED);
-        itemModelGenerator.register(RainyItems.MARROW_HEAP, Models.GENERATED);
-        itemModelGenerator.register(RainyItems.MARROW_DUST, Models.GENERATED);
+        itemModelGenerator.register(RainyItems.EMPTY_BATTERY, Models.GENERATED);
+        itemModelGenerator.register(RainyItems.CHARGED_BATTERY, Models.GENERATED);
+        itemModelGenerator.register(RainyItems.ZINC_PILE, Models.GENERATED);
+        itemModelGenerator.register(RainyItems.ZINC_DUST, Models.GENERATED);
         itemModelGenerator.register(RainyItems.COPPER_WIRE, Models.GENERATED);
         itemModelGenerator.register(RainyItems.COPPER_COIL, Models.GENERATED);
-        itemModelGenerator.register(RainyItems.MARROW_INGOT, Models.GENERATED);
+        itemModelGenerator.register(RainyItems.ZINC_INGOT, Models.GENERATED);
         itemModelGenerator.register(RainyItems.COPPER_INSULATED_WIRE, Models.GENERATED);
         itemModelGenerator.register(RainyItems.INSULATED_ZINC_WIRE, Models.GENERATED);
         itemModelGenerator.register(RainyItems.GOLD_WIRE, Models.GENERATED);
