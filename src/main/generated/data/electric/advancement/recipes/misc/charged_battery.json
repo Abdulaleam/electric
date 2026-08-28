@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "electric:empty_battery"
+        "recipe": "electric:charged_battery"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "electric:empty_battery"
+      "electric:charged_battery"
     ]
   }
 }

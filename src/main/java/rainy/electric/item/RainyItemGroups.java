@@ -35,6 +35,7 @@ public class RainyItemGroups {
                         entries.add(RainyItems.COPPER_COIL);
                         entries.add(RainyItems.ZINC_COIL);
                         entries.add(RainyItems.GOLD_COIL);
+                        entries.add(RainyBlocks.PRESSURE);
 
 
                     })

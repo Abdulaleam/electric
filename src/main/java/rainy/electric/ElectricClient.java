@@ -1,6 +1,7 @@
 package rainy.electric;
 
 import net.fabricmc.api.ClientModInitializer;
+import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import rainy.electric.entity.ModBlockEntities;
@@ -8,6 +9,7 @@ import rainy.electric.entity.render.DisplayerBlockEntityRender;
 import rainy.electric.screen.DisplayerScreen;
 import rainy.electric.screen.InsulatorScreen;
 import rainy.electric.screen.ModScreenHandlers;
+import rainy.electric.screen.PressureScreen;
 
 public class ElectricClient implements ClientModInitializer {
     @Override
@@ -20,6 +22,10 @@ public class ElectricClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.DISPLAYER_SCREEN_HANDLER, DisplayerScreen::new);
 
         HandledScreens.register(ModScreenHandlers.INSULATOR_SCREEN_HANDLER, InsulatorScreen::new);
+
+        HandledScreens.register(ModScreenHandlers.PRESSURE_SCREEN_HANDLER, PressureScreen::new);
+
+
 
     }
 }

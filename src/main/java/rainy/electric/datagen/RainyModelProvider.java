@@ -17,6 +17,8 @@ public class RainyModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(RainyBlocks.ZINC_ORE);
 
+        blockStateModelGenerator.registerSimpleCubeAll(RainyBlocks.PRESSURE);
+
     }
 
     @Override
