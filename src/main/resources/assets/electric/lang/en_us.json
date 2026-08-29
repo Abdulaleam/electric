@@ -18,6 +18,10 @@
   "item.electric.gold_wire": " Gold Wire",
   "item.electric.insulated_gold_wire": " Insulated Gold Wire",
   "item.electric.gold_coil": "  Gold coil",
+  "item.electric.circuit": " Circuit ",
+  "item.electric.upgraded_circuit": " Upgraded Circuit",
+
+  "block.electric.pressure" : " Compressor Pressure Machine",
 
   "itemgroup.electric.electric_era_items": " §5Electric Era"
 
