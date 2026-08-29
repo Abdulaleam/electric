@@ -34,6 +34,10 @@ public class RainyItems {
     public static final Item ZINC_COIL = registerItem("zinc_coil", new Item(new Item.Settings()));
     public static final Item GOLD_COIL = registerItem("gold_coil", new Item(new Item.Settings()));
 
+    public static final Item CIRCUIT = registerItem("circuit", new Item(new Item.Settings()));
+
+    public static final Item UPGRADED_CIRCUIT = registerItem("upgraded_circuit", new Item(new Item.Settings()));
+
 
     private static Item registerItem(String name, Item item) {
 
