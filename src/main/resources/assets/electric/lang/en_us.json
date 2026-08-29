@@ -20,6 +20,10 @@
   "item.electric.gold_coil": "  Gold coil",
   "item.electric.circuit": " Circuit ",
   "item.electric.upgraded_circuit": " Upgraded Circuit",
+  "item.electric.iron_plate": "Iron Plate",
+  "item.electric.gold_plate" : "Gold Plate",
+  "item.electric.zinc_plate": "Zinc Plate",
+  "item.electric.copper_plate": "Copper Plate",
 
   "block.electric.pressure" : " Compressor Pressure Machine",
 

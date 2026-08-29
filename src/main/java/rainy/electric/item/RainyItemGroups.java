@@ -38,6 +38,10 @@ public class RainyItemGroups {
                         entries.add(RainyBlocks.PRESSURE);
                         entries.add(RainyItems.CIRCUIT);
                         entries.add(RainyItems.UPGRADED_CIRCUIT);
+                        entries.add(RainyItems.COPPER_PLATE);
+                        entries.add(RainyItems.IRON_PLATE);
+                        entries.add(RainyItems.GOLD_PLATE);
+                        entries.add(RainyItems.ZINC_PLATE);
 
 
                     })

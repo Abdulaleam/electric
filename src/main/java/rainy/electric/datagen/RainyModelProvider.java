@@ -39,6 +39,10 @@ public class RainyModelProvider extends FabricModelProvider {
         itemModelGenerator.register(RainyItems.ZINC_COIL, Models.GENERATED);
         itemModelGenerator.register(RainyItems.CIRCUIT, Models.GENERATED);
         itemModelGenerator.register(RainyItems.UPGRADED_CIRCUIT, Models.GENERATED);
+        itemModelGenerator.register(RainyItems.COPPER_PLATE, Models.GENERATED);
+        itemModelGenerator.register(RainyItems.IRON_PLATE, Models.GENERATED);
+        itemModelGenerator.register(RainyItems.GOLD_PLATE, Models.GENERATED);
+        itemModelGenerator.register(RainyItems.ZINC_PLATE, Models.GENERATED);
 
     }
 }
