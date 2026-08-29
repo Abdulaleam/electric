@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "electric:zinc_ingot"
+    },
+    "X": {
+      "item": "electric:copper_insulated_wire"
+    },
+    "Y": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "YRY",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "electric:circuit"
+  }
+}

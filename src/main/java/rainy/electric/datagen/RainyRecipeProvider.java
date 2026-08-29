@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import rainy.electric.block.RainyBlocks;
@@ -66,6 +67,26 @@ public class RainyRecipeProvider extends FabricRecipeProvider {
                 .input('Y', Items.STONE_BRICKS)
                 .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
                 .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.CIRCUIT)
+                .pattern("XXX")
+                .pattern("YRY")
+                .pattern("XXX")
+                .input('X', RainyItems.COPPER_INSULATED_WIRE)
+                .input('Y', Items.REDSTONE)
+                .input('R', RainyItems.ZINC_INGOT)
+                .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.UPGRADED_CIRCUIT)
+                .pattern("RRR")
+                .pattern("RXR")
+                .pattern("RRR")
+                .input('R', Items.IRON_INGOT)
+                .input('X', RainyItems.CIRCUIT)
+                .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
+                .offerTo(exporter);
+
 
 
 

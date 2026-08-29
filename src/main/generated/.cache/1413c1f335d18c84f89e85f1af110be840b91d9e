@@ -1,6 +1,7 @@
-// 1.21.1	2026-08-29T02:08:02.6023971	electric/Model Definitions
+// 1.21.1	2026-08-29T15:48:24.6996044	electric/Model Definitions
 60409e69fd76f55b31359946cdb40032749d1692 assets\electric\models\item\empty_battery.json
 3be5f0a1e2c433c57c4e5d3a064fa32ad1106a38 assets\electric\models\item\zinc_coil.json
+89aed308775023f85d5fc90ee83da70919efcd23 assets\electric\models\item\circuit.json
 481ed6877402c492e70f20832224dc7ad7563b6b assets\electric\models\block\pressure.json
 18d84ffe6b6efcf1e9fd2f5baf87ab8dd4ce8816 assets\electric\models\item\insulated_gold_wire.json
 3196820eb613c247c6fb18fbf6e15da975a22ab3 assets\electric\models\item\copper_wire.json
@@ -19,3 +20,4 @@ c8e18712c37df3f04166f02ad3827aac3fe05baa assets\electric\models\item\insulated_z
 38ceb98b2d7f9f177bb4a90d33b4d32d89ca35b4 assets\electric\models\item\copper_insulated_wire.json
 f1148e3a4a6b26cd010f0c30fa4dca7a013cd5d7 assets\electric\blockstates\pressure.json
 4095643fae15741584417f9192ed35467669080d assets\electric\models\item\zinc_ingot.json
+89f1a434892d679ccfa51aed98edebf89106f607 assets\electric\models\item\upgraded_circuit.json

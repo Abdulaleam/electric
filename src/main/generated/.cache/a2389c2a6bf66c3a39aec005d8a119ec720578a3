@@ -1,13 +1,17 @@
-// 1.21.1	2026-08-29T02:08:02.6008862	electric/Recipes
+// 1.21.1	2026-08-29T15:48:24.6985976	electric/Recipes
 b823a7a443c19c1ea09e79aa2f33654ff9afd7ef data\electric\advancement\recipes\misc\insulator.json
+3cbcedd259c4e8304fa221fd0aa887d9ac2887c3 data\electric\advancement\recipes\misc\upgraded_circuit.json
 4d51af44a5a0945ced522af627e45c5e8685ef4e data\electric\recipe\copper_wire.json
 d166debc9e7f728c97b4f7af87afe653656de4e3 data\electric\recipe\zinc_dust.json
 f03559f4ddbc0f574d39715f05ce6f86adb71f44 data\electric\recipe\gold_wire.json
 d0fc8a4636d0aff80c54b9c594a205dd2d77625f data\electric\recipe\charged_battery.json
 0167bab71346a3e782ee1d3da3a95fbc6701505d data\electric\advancement\recipes\misc\gold_wire.json
+2beba647176572e82bba7c5fd32a3ff041f109ef data\electric\recipe\upgraded_circuit.json
 1475dd7fc6cbc0c5c5a25cde35244ea10a1ae619 data\electric\advancement\recipes\misc\zinc_wire.json
+dd8972831602537b4cc2198f07399ad2f3e1b93e data\electric\advancement\recipes\misc\circuit.json
 d0f65dbcc52a3f84a6014898f519732070b74709 data\electric\recipe\insulator.json
 9c1becb989b4c5a8f9736b476f780ee2a6dda3da data\electric\advancement\recipes\misc\charged_battery.json
 e9f63d26ada785edda9eada24fe76ec7cf501826 data\electric\recipe\zinc_wire.json
+2c608ea340928ad7c84bde788b46ce595f04901b data\electric\recipe\circuit.json
 ac31a7ba80b03db20537c3751e29c744e1bbae20 data\electric\advancement\recipes\misc\zinc_dust.json
 4d1cce2ac9b830b1bef85b58f0249e2affd438fb data\electric\advancement\recipes\misc\copper_wire.json
