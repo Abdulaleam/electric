@@ -14,6 +14,7 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.listener.ClientPlayPacketListener;
 import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.s2c.play.BlockEntityUpdateS2CPacket;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
@@ -24,7 +25,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import rainy.electric.item.RainyItems;
+import rainy.electric.recipe.ModRecipes;
+import rainy.electric.recipe.PressureRecipe;
+import rainy.electric.recipe.PressureRecipeInput;
 import rainy.electric.screen.PressureScreenHandler;
+
+import java.util.Optional;
 
 public class PressureBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory<BlockPos>, ImplementedInventory {
 
@@ -115,7 +121,8 @@ public class PressureBlockEntity extends BlockEntity implements ExtendedScreenHa
     }
 
     private void craftItem() {
-        ItemStack output = new ItemStack(RainyItems.ZINC_COIL);
+        Optional<RecipeEntry<PressureRecipe>> recipe = getCurrentRecipe();
+        ItemStack output = recipe.get().value().output();
 
         this.removeStack(INPUT_SLOT, 1);
 
@@ -133,11 +140,19 @@ public class PressureBlockEntity extends BlockEntity implements ExtendedScreenHa
     }
 
     private boolean hasRecipe() {
-        Item input = RainyItems.ZINC_INGOT;
-        ItemStack output = new ItemStack(RainyItems.ZINC_COIL);
+        Optional<RecipeEntry<PressureRecipe>> recipe = getCurrentRecipe();
+        if(recipe.isEmpty()) {
+            return false;
+        }
 
-        return this.getStack(INPUT_SLOT).isOf(input) &&
-                canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
+        ItemStack output = recipe.get().value().output();
+
+        return canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
+    }
+
+    private Optional<RecipeEntry<PressureRecipe>> getCurrentRecipe() {
+        return this.getWorld().getRecipeManager().getFirstMatch(ModRecipes.PRESSURE_TYPE,
+                new PressureRecipeInput(inventory.get(INPUT_SLOT)), this.getWorld());
     }
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output) {

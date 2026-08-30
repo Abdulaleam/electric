@@ -1,0 +1,10 @@
+{
+  "type": "electric:pressure",
+  "ingredient": {
+    "item": "minecraft:gold_ingot"
+  },
+  "result": {
+    "id": "electric:gold_plate"
+  }
+
+}

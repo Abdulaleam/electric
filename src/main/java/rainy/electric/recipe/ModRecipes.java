@@ -16,10 +16,22 @@ public class ModRecipes {
             Registries.RECIPE_TYPE, Identifier.of(Electric.MOD_ID, "insulator"), new RecipeType<>() {
                 @Override
                 public String toString() {
-                    return "insulator";
-                }
-            }
-    );
-    public static void registerRecipe(){}
+                    return "insulator"; }});
+    // that was lowkey fire, i think now im done with the my first crafting block
+
+    public static final RecipeSerializer<PressureRecipe> PRESSURE_SERIALIZER = Registry.register(
+            Registries.RECIPE_SERIALIZER, Identifier.of(Electric.MOD_ID, "pressure"),
+            new PressureRecipe.Serializer());
+    public static final RecipeType<PressureRecipe> PRESSURE_TYPE = Registry.register(
+            Registries.RECIPE_TYPE, Identifier.of(Electric.MOD_ID, "pressure"), new RecipeType<>() {
+                @Override
+                public String toString() {
+                    return "pressure";}});
+
+    // so now IM DONE WITH THIS TRASHHH bruh for 2nd time
+
+    public static void registerRecipe(){
+        Electric.LOGGER.info("Registering recipes F-O-R <3" + Electric.MOD_ID);
+    }
 
 }

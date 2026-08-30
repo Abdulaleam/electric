@@ -1,0 +1,10 @@
+{
+  "type": "electric:pressure",
+  "ingredient": {
+    "item": "electric:zinc_ingot"
+  },
+  "result": {
+    "id": "electric:zinc_plate"
+  }
+
+}
