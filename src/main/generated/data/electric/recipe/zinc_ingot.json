@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:gold_nugget"
+    },
+    "X": {
+      "item": "electric:zinc_dust"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "RXR",
+    "RRR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "electric:zinc_ingot"
+  }
+}
