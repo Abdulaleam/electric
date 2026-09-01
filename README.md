@@ -1,6 +1,6 @@
 # Rainy’s Electric Era
 
-GUIDE : https://youtu.be/ofTyZ4BWF2k
+GUIDE : [https://youtu.be/ofTyZ4BWF2k](https://youtu.be/ofTyZ4BWF2k)
 
 This mod is a Minecraft mod that adds Electric - Related Items such as Wires, Coils, Batteries, new Ingots too YAPPEE
 
@@ -42,11 +42,12 @@ The idea of this Mod is to follow Minecraft 's Iconic Original IDEA OF CRAFTING 
 *   It's Used to Craft THE Charged batter which is needed for the Electric Sword.
 
 ***
+
 # Charged Battery
 
 ![tnt](https://media.discordapp.net/attachments/1536847653105831958/1544176708666527774/2026-09-01_05.46.46.png?ex=6a978e20&is=6a963ca0&hm=22f87cdccc0d1eb35f1603de7cb31166b860313c3ba92dc197aaae5ef73271eb&=&format=webp&quality=lossless&width=1536&height=864)
 
-* It's used to craft the electric Sword
+*   It's used to craft the electric Sword
 
 ***
 
@@ -54,46 +55,112 @@ The idea of this Mod is to follow Minecraft 's Iconic Original IDEA OF CRAFTING 
 
 ![tnt](https://media.discordapp.net/attachments/1536847653105831958/1544176130339373086/2026-09-01_05.44.28.png?ex=6a978d96&is=6a963c16&hm=adb55ae795b6a3b3a1046e556f5f1989848cc5c09850d9fb57c28b29be0ebf53&=&format=webp&quality=lossless&width=1536&height=864)
 
-*  It's Used to turn wires into Insulated Wires needed for crafting.
+*   It's Used to turn wires into Insulated Wires needed for crafting.
 
 ***
+
 # Pressure Block
 
 ![tnt](https://media.discordapp.net/attachments/1536847653105831958/1544178453648117800/2026-09-01_05.53.40.png?ex=6a978fc0&is=6a963e40&hm=c161f55c49c86443aeb69abd8845a880819c135f4a7e50a0ceba1ba1bac1c406&=&format=webp&quality=lossless&width=1536&height=864)
 
-*  It's Used to turn ingots into Plates 
+*   It's Used to turn ingots into Plates
 
 ***
+
 # Nuclear Displayer Block
 
 ![tnt](https://cdn.discordapp.com/attachments/1536847653105831958/1544178815834791986/2026-09-01_05.55.07.png?ex=6a979017&is=6a963e97&hm=74f395ddaf293bd14569c02e8f2efa854c19f357c9a4e49cafe30197c3d5d190&)
 
-*  It's Used to Display your dangerous Items.
+*   It's Used to Display your dangerous Items.
+
 ***
+
 # Coiler Block
 
 ![tnt](https://media.discordapp.net/attachments/1536847653105831958/1544179026824794212/2026-09-01_05.55.58.png?ex=6a979049&is=6a963ec9&hm=c421ac704cfa73d9c6b1e1342c51561f46d2460f78791d7ec2bf34de8de097c8&=&format=webp&quality=lossless&width=640&height=360)
 
-*  It's Used to turn Ingots into Coils.
+*   It's Used to turn Ingots into Coils.
 
 ***
 
-# Electric Sword 
+# Electric Sword
 
 ![alt text](https://media.discordapp.net/attachments/1536847653105831958/1544179528752955443/2026-09-01_05.57.57.png?ex=6a9790c1&is=6a963f41&hm=96ccc31d0d6d821ea49d8e0d5aedef8268e052ced25641bf0629ffec06efc0bf&=&format=webp&quality=lossless&width=1536&height=864)
 
-* its the end game sword and item of this mod , where you can 1 shot any mob and summon Lighting with it.
+*   its the end game sword and item of this mod , where you can 1 shot any mob and summon Lighting with it.
 
+***
 
----
-# AI USAGE
-# NO AI WAS USED FOR CODING OR WRITING THE READ ME OR DESCRIPTION IT WAS JUST USED FOR FINDING TEXTURES OR EDITING IMAGES SO they are backgroundless and suitbale for minecraft
-# End 
+# End
 
 *   It Was a pretty Fun Mod to make and learn while working on this project for horizons. thank you
 
 # Download tips
 
-* You can use The curseforge software to use the mod
-* or put it in your mods folder in %appdata% minecraft / mods 
+# Method 1: Using the CurseForge App (uh prob the fastest way so yeh use it)
 
+1. Open the CurseForge App and click on Minecraft.
+2. Click Create Custom Profile in the top right corner.
+3. Configure the profile settings exactly like this:
+   - Profile Name: Give it any name (e.g., " diz is mah best pack").
+   - Minecraft Version: Select 1.21.1.
+   - Modloader: Select Fabric.
+   - Modloader Version: Leave it on the default recommended version.
+4. Click Create.
+5. Click on your newly created profile, then click the Add More Content button (puzzle piece icon).
+6. Search for any mods you want. The app will only show mods compatible with Fabric 1.21.1. Click Install next to the ones you want.
+   - Note: Always install the Fabric API mod first, as almost all Fabric mods require it to run!
+7. Go back to your profile and click Play. This opens the Minecraft Launcher with your modpack pre-loaded.
+
+---
+
+# Method 2: Manual Installation (Standard Launcher)
+
+### Step 1: Install the Fabric Loader
+1. Go to the Fabric Installer Page (fabricmc.net/use/installer/) and download the Universal/.JAR or Windows/.EXE installer.
+2. Run the downloaded installer.
+3. Set the Minecraft Version to 1.21.1 and click Install. 
+4. Once finished, close the installer.
+
+### Step 2: Download Your Mods
+1. Go to the CurseForge Minecraft Mods Directory.
+2. Use the left-side filters to set:
+   - Game Version: 1.21.1
+   - Mod Loader: Fabric
+3. Download the Fabric API (Required) and any other mods you want. Make sure the downloaded file names contain fabric and 1.21.1.
+
+***
+### Step 3: Place Files in the Mods Folder
+1. Press Windows Key + R to open the Run window.
+2. Type %appdata%\.minecraft and press Enter.
+3. Look for a folder named mods. If it doesn't exist, right-click, create a new folder, and name it exactly mods.
+4. Drag and drop all your downloaded .jar files (including the Fabric API) into this mods folder.
+  
+---
+### Step 4: Launch the Game
+1. Open your standard Minecraft Launcher.
+2. In the bottom-left dropdown menu (next to the Play button), select the fabric-loader-1.21.1 profile.
+3. Click Play.
+---
+# How to Clone a Git Project in IntelliJ IDEA
+
+### Method 1: From the Welcome Screen
+1. Open IntelliJ IDEA.
+2. Click the "Get from VCS" button (usually center-left on the Welcome Screen, moves around a bit depending on your version lol).
+3. Paste your repo link into the URL box.
+4. Choose your local save location in the Directory box.
+5. Click Clone.
+
+### Method 2: From inside an open project
+1. Go to **File → New → Project from Version Control...** (or the **Git** menu → **Clone...**, depends on your version).
+2. Select "Clone..." or "Get from Version Control..." if its not already selected.
+3. Paste your repo link into the URL box.
+4. Choose your local save location in the Directory box.
+5. Click Clone.
+
+### Method 3: Using the Terminal
+1. Open a terminal (or IntelliJ's built in one, View → Tool Windows → Terminal).
+2. cd into the folder where you want the project to live.
+3. Run:
+   ``` git clone (uhhh put here your repo link or smth)
+   ```
