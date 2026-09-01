@@ -86,8 +86,9 @@ The idea of this Mod is to follow Minecraft 's Iconic Original IDEA OF CRAFTING 
 
 
 ---
-
-# End
+# AI USAGE
+# NO AI WAS USED FOR CODING OR WRITING THE READ ME OR DESCRIPTION IT WAS JUST USED FOR FINDING TEXTURES OR EDITING IMAGES SO they are backgroundless and suitbale for minecraft
+# End 
 
 *   It Was a pretty Fun Mod to make and learn while working on this project for horizons. thank you
 
