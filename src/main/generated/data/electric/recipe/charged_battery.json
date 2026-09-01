@@ -6,7 +6,7 @@
       "item": "minecraft:redstone"
     },
     "X": {
-      "item": "electric:charged_battery"
+      "item": "electric:empty_battery"
     }
   },
   "pattern": [

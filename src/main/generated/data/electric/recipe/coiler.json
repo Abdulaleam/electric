@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "electric:zinc_ingot"
+    },
+    "Y": {
+      "item": "minecraft:stone"
+    }
+  },
+  "pattern": [
+    "YYY",
+    "YXY",
+    "YYY"
+  ],
+  "result": {
+    "count": 1,
+    "id": "electric:coiler"
+  }
+}

@@ -116,6 +116,32 @@ public class RainyRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyBlocks.COILER)
+                .pattern("YYY")
+                .pattern("YXY")
+                .pattern("YYY")
+                .input('X', RainyItems.ZINC_INGOT)
+                .input('Y', Items.STONE)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyBlocks.PRESSURE)
+                .pattern("YYY")
+                .pattern("YXY")
+                .pattern("YYY")
+                .input('X', RainyItems.ZINC_INGOT)
+                .input('Y', Items.OAK_PLANKS)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyBlocks.DISPLAYER)
+                .pattern("YYY")
+                .pattern("YXY")
+                .pattern("YYY")
+                .input('X', RainyItems.ZINC_INGOT)
+                .input('Y', Items.GLASS)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter);
+
+
 
 
 

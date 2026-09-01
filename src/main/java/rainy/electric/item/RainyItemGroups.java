@@ -43,6 +43,7 @@ public class RainyItemGroups {
                         entries.add(RainyItems.IRON_PLATE);
                         entries.add(RainyItems.GOLD_PLATE);
                         entries.add(RainyItems.ZINC_PLATE);
+                        entries.add(RainyItems.ELECTRIC_SWORD);
 
 
 

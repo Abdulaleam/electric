@@ -13,7 +13,7 @@ import net.minecraft.world.World;
 
 public class ChargedHitEffect extends Item {
 
-    private static int LIGHTING_STRIKES = 3;
+    private static int LIGHTING_STRIKES = 5;
 
 
     public ChargedHitEffect(Settings settings) {
