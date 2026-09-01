@@ -93,74 +93,17 @@ The idea of this Mod is to follow Minecraft 's Iconic Original IDEA OF CRAFTING 
 
 # End
 
-*   It Was a pretty Fun Mod to make and learn while working on this project for horizons. thank you
-
-# Download tips
-
-# Method 1: Using the CurseForge App (uh prob the fastest way so yeh use it)
-
-1. Open the CurseForge App and click on Minecraft.
-2. Click Create Custom Profile in the top right corner.
-3. Configure the profile settings exactly like this:
-   - Profile Name: Give it any name (e.g., " diz is mah best pack").
-   - Minecraft Version: Select 1.21.1.
-   - Modloader: Select Fabric.
-   - Modloader Version: Leave it on the default recommended version.
-4. Click Create.
-5. Click on your newly created profile, then click the Add More Content button (puzzle piece icon).
-6. Search for any mods you want. The app will only show mods compatible with Fabric 1.21.1. Click Install next to the ones you want.
-   - Note: Always install the Fabric API mod first, as almost all Fabric mods require it to run!
-7. Go back to your profile and click Play. This opens the Minecraft Launcher with your modpack pre-loaded.
-
----
-
-# Method 2: Manual Installation (Standard Launcher)
-
-### Step 1: Install the Fabric Loader
-1. Go to the Fabric Installer Page (fabricmc.net/use/installer/) and download the Universal/.JAR or Windows/.EXE installer.
-2. Run the downloaded installer.
-3. Set the Minecraft Version to 1.21.1 and click Install. 
-4. Once finished, close the installer.
-
-### Step 2: Download Your Mods
-1. Go to the CurseForge Minecraft Mods Directory.
-2. Use the left-side filters to set:
-   - Game Version: 1.21.1
-   - Mod Loader: Fabric
-3. Download the Fabric API (Required) and any other mods you want. Make sure the downloaded file names contain fabric and 1.21.1.
+*   It Was a pretty Fun Mod to make and learn while working on this project for horizons. thank you <3.
 
 ***
-### Step 3: Place Files in the Mods Folder
-1. Press Windows Key + R to open the Run window.
-2. Type %appdata%\.minecraft and press Enter.
-3. Look for a folder named mods. If it doesn't exist, right-click, create a new folder, and name it exactly mods.
-4. Drag and drop all your downloaded .jar files (including the Fabric API) into this mods folder.
-  
----
-### Step 4: Launch the Game
-1. Open your standard Minecraft Launcher.
-2. In the bottom-left dropdown menu (next to the Play button), select the fabric-loader-1.21.1 profile.
-3. Click Play.
----
-# How to Clone a Git Project in IntelliJ IDEA
+# How to Download
 
-### Method 1: From the Welcome Screen
-1. Open IntelliJ IDEA.
-2. Click the "Get from VCS" button (usually center-left on the Welcome Screen, moves around a bit depending on your version lol).
-3. Paste your repo link into the URL box.
-4. Choose your local save location in the Directory box.
-5. Click Clone.
+* It's pretty simple just download the mod file from curseforge and make sure that uhh you also have the fabric api for 1.21.1
+* and put them both in your %appdata% mineecraft mods folder
+* then run da game dude , its 2026 . <3
+* or you can use the curseforge launcher that justs does everything for you in 1 click
+***
 
-### Method 2: From inside an open project
-1. Go to **File → New → Project from Version Control...** (or the **Git** menu → **Clone...**, depends on your version).
-2. Select "Clone..." or "Get from Version Control..." if its not already selected.
-3. Paste your repo link into the URL box.
-4. Choose your local save location in the Directory box.
-5. Click Clone.
-
-### Method 3: Using the Terminal
-1. Open a terminal (or IntelliJ's built in one, View → Tool Windows → Terminal).
-2. cd into the folder where you want the project to live.
-3. Run:
-   ``` git clone (uhhh put here your repo link or smth)
-   ```
+# How to Clone the Repo in Intelljea idea
+* Press on your project name thing
+* then press clone repo and enter link
