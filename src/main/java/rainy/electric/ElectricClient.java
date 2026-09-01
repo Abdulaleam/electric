@@ -6,10 +6,7 @@ import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import rainy.electric.entity.ModBlockEntities;
 import rainy.electric.entity.render.DisplayerBlockEntityRender;
-import rainy.electric.screen.DisplayerScreen;
-import rainy.electric.screen.InsulatorScreen;
-import rainy.electric.screen.ModScreenHandlers;
-import rainy.electric.screen.PressureScreen;
+import rainy.electric.screen.*;
 
 public class ElectricClient implements ClientModInitializer {
     @Override
@@ -24,6 +21,8 @@ public class ElectricClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.INSULATOR_SCREEN_HANDLER, InsulatorScreen::new);
 
         HandledScreens.register(ModScreenHandlers.PRESSURE_SCREEN_HANDLER, PressureScreen::new);
+
+        HandledScreens.register(ModScreenHandlers.COILER_SCREEN_HANDLER, CoilerScreen::new);
 
 
 

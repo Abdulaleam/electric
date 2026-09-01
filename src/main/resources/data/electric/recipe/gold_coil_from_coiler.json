@@ -1,0 +1,10 @@
+{
+  "type": "electric:coiler",
+  "ingredient": {
+    "item": "minecraft:gold_ingot"
+  },
+  "result": {
+    "id": "electric:gold_coil"
+  }
+
+}

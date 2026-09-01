@@ -21,6 +21,10 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Electric.MOD_ID, "pressure_be"),
                     BlockEntityType.Builder.create(PressureBlockEntity::new, RainyBlocks.PRESSURE).build(null));
 
+    public static final BlockEntityType<CoilerBlockEntity> COILER_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Electric.MOD_ID, "coiler_be"),
+                    BlockEntityType.Builder.create(CoilerBlockEntity::new, RainyBlocks.COILER).build(null));
+
     public static void registerBlockEntities() {
         Electric.LOGGER.info("Registering block entities for" + Electric.MOD_ID);
     }

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "electric:charged_battery"
+    },
+    "X": {
+      "item": "electric:upgraded_circuit"
+    },
+    "Y": {
+      "item": "electric:gold_coil"
+    },
+    "Z": {
+      "item": "electric:insulated_zinc_wire"
+    }
+  },
+  "pattern": [
+    "ZZZ",
+    "FXF",
+    "YYY"
+  ],
+  "result": {
+    "count": 1,
+    "id": "electric:electric_sword"
+  }
+}

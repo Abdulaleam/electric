@@ -29,6 +29,14 @@ public class ModRecipes {
                     return "pressure";}});
 
     // so now IM DONE WITH THIS TRASHHH bruh for 2nd time
+    public static final RecipeSerializer<CoilerRecipe> COILER_SERIALIZER = Registry.register(
+            Registries.RECIPE_SERIALIZER, Identifier.of(Electric.MOD_ID, "coiler"),
+            new CoilerRecipe.Serializer());
+    public static final RecipeType<CoilerRecipe> COILER_TYPE = Registry.register(
+            Registries.RECIPE_TYPE, Identifier.of(Electric.MOD_ID, "coiler"), new RecipeType<>() {
+                @Override
+                public String toString() {
+                    return "coiler";}});
 
     public static void registerRecipe(){
         Electric.LOGGER.info("Registering recipes F-O-R <3" + Electric.MOD_ID);

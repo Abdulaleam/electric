@@ -23,6 +23,8 @@ public class RainyBlocks {
     public static final Block PRESSURE = registerBlock("pressure",
             new PressureBlock((AbstractBlock.Settings.create().nonOpaque())));
 
+    public static final Block COILER = registerBlock("coiler",
+            new CoilerBlock((AbstractBlock.Settings.create().nonOpaque())));
 
     private static Block registerBlock(String name, Block block) {
         registerRainyBlockItem(name, block);

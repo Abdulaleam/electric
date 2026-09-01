@@ -25,6 +25,7 @@
   "item.electric.zinc_plate": "Zinc Plate",
   "item.electric.copper_plate": "Copper Plate",
 
+  "block.electric.coiler": " Coiler! ",
   "block.electric.pressure" : " Compressor Pressure Machine",
 
   "itemgroup.electric.electric_era_items": " §5Electric Era"

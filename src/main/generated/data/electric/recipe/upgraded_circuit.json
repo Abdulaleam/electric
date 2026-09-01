@@ -2,8 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "F": {
+      "item": "minecraft:diamond"
+    },
     "R": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:obsidian"
     },
     "X": {
       "item": "electric:circuit"
@@ -11,7 +14,7 @@
   },
   "pattern": [
     "RRR",
-    "RXR",
+    "FXF",
     "RRR"
   ],
   "result": {

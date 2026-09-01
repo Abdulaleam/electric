@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "electric:item/overcharged_battery"
+    "layer0": "electric:item/electric_sword"
   }
 }

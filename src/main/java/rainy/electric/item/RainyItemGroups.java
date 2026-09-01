@@ -24,8 +24,6 @@ public class RainyItemGroups {
                         entries.add(RainyItems.ZINC_DUST);
                         entries.add(RainyItems.ZINC_PILE);
                         entries.add(RainyItems.ZINC_INGOT);
-                        entries.add(RainyBlocks.DISPLAYER);
-                        entries.add(RainyBlocks.INSULATOR);
                         entries.add(RainyItems.COPPER_WIRE);
                         entries.add(RainyItems.ZINC_WIRE);
                         entries.add(RainyItems.GOLD_WIRE);
@@ -35,13 +33,17 @@ public class RainyItemGroups {
                         entries.add(RainyItems.COPPER_COIL);
                         entries.add(RainyItems.ZINC_COIL);
                         entries.add(RainyItems.GOLD_COIL);
+                        entries.add(RainyBlocks.DISPLAYER);
+                        entries.add(RainyBlocks.INSULATOR);
                         entries.add(RainyBlocks.PRESSURE);
+                        entries.add(RainyBlocks.COILER);
                         entries.add(RainyItems.CIRCUIT);
                         entries.add(RainyItems.UPGRADED_CIRCUIT);
                         entries.add(RainyItems.COPPER_PLATE);
                         entries.add(RainyItems.IRON_PLATE);
                         entries.add(RainyItems.GOLD_PLATE);
                         entries.add(RainyItems.ZINC_PLATE);
+
 
 
                     })

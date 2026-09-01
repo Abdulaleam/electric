@@ -21,7 +21,9 @@ public class ModScreenHandlers {
     public static final ScreenHandlerType<PressureScreenHandler> PRESSURE_SCREEN_HANDLER=
             Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Electric.MOD_ID, "pressure_screen_handler"),
                     new ExtendedScreenHandlerType<>(PressureScreenHandler:: new, BlockPos.PACKET_CODEC));
-
+    public static final ScreenHandlerType<CoilerScreenHandler> COILER_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Electric.MOD_ID, "coiler_screen_handler"),
+                    new ExtendedScreenHandlerType<>(CoilerScreenHandler::new, BlockPos.PACKET_CODEC));
 
     public static void registerscreenHandlers() {
         Electric.LOGGER.info("registering screen handlers FOR " + Electric.MOD_ID );

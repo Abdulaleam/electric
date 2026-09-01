@@ -80,11 +80,31 @@ public class RainyRecipeProvider extends FabricRecipeProvider {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.UPGRADED_CIRCUIT)
                 .pattern("RRR")
-                .pattern("RXR")
+                .pattern("FXF")
                 .pattern("RRR")
-                .input('R', Items.IRON_INGOT)
+                .input('R', Items.OBSIDIAN)
+                .input('F', Items.DIAMOND)
                 .input('X', RainyItems.CIRCUIT)
                 .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.ZINC_INGOT)
+                .pattern("RRR")
+                .pattern("RXR")
+                .pattern("RRR")
+                .input('R', Items.GOLD_NUGGET)
+                .input('X', RainyItems.ZINC_DUST)
+                .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.ELECTRIC_SWORD)
+                .pattern("ZZZ")
+                .pattern("FXF")
+                .pattern("YYY")
+                .input('X', RainyItems.UPGRADED_CIRCUIT)
+                .input('Z', RainyItems.INSULATED_ZINC_WIRE)
+                .input('Y', RainyItems.GOLD_COIL)
+                .input('F', RainyItems.CHARGED_BATTERY)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .offerTo(exporter);
 
 
