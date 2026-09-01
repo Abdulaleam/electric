@@ -57,7 +57,7 @@ public class RainyRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.CHARGED_BATTERY)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.EMPTY_BATTERY)
                 .pattern("YYY")
                 .pattern("XZX")
                 .pattern("NNN")
@@ -67,6 +67,7 @@ public class RainyRecipeProvider extends FabricRecipeProvider {
                 .input('Y', Items.STONE_BRICKS)
                 .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
                 .offerTo(exporter);
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.CIRCUIT)
                 .pattern("XXX")
@@ -93,6 +94,14 @@ public class RainyRecipeProvider extends FabricRecipeProvider {
                 .pattern("RRR")
                 .input('R', Items.GOLD_NUGGET)
                 .input('X', RainyItems.ZINC_DUST)
+                .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, RainyItems.CHARGED_BATTERY)
+                .pattern("RRR")
+                .pattern("RXR")
+                .pattern("RRR")
+                .input('R', Items.REDSTONE)
+                .input('X', RainyItems.CHARGED_BATTERY)
                 .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
                 .offerTo(exporter);
 

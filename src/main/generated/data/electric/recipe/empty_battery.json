@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:gold_ingot"
+    },
+    "X": {
+      "item": "minecraft:redstone_block"
+    },
+    "Y": {
+      "item": "minecraft:stone_bricks"
+    },
+    "Z": {
+      "item": "electric:copper_wire"
+    }
+  },
+  "pattern": [
+    "YYY",
+    "XZX",
+    "NNN"
+  ],
+  "result": {
+    "count": 1,
+    "id": "electric:empty_battery"
+  }
+}
