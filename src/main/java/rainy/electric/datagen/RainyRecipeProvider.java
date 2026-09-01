@@ -101,7 +101,7 @@ public class RainyRecipeProvider extends FabricRecipeProvider {
                 .pattern("RXR")
                 .pattern("RRR")
                 .input('R', Items.REDSTONE)
-                .input('X', RainyItems.CHARGED_BATTERY)
+                .input('X', RainyItems.EMPTY_BATTERY)
                 .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
                 .offerTo(exporter);
 
